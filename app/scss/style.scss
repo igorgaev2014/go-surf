@@ -148,6 +148,7 @@
   &__search {
     padding-top: 15px;
     padding-bottom: 35px;
+    cursor: pointer;
   }
 
   &__location {
@@ -167,6 +168,7 @@
       top: 0;
       left: 0;
       background-image: url(../images/marker.svg);
+      cursor: pointer;
     }
   }
 
