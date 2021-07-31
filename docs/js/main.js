@@ -4,14 +4,30 @@ $(function () {
     infinite: true,
     fade: false,
     prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/arrow-left.svg" alt="images"></img>',
-    nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrow-right.svg" alt="images"></img>',    
-    asNavFor: '.slider-dots',
+    nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrow-right.svg" alt="images"></img>',
+    asNavFor: '.slider-dotshead',
   });
 
-  $('.slider-dots').slick({
+  $('.slider-dotshead').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: '.header__slider',
+  });
+
+  $('.surf-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<img class="slider-arrows slider-arrows__left" src="images/arrow-left.svg" alt="images"></img>',
+    nextArrow: '<img class="slider-arrows slider-arrows__right" src="images/arrow-right.svg" alt="images"></img>',
+    asNavFor: '.slider-map',
+  });
+
+  $('.slider-map').slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.surf-slider',
+    focusOnSelect: true
   });
 
 });
