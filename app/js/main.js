@@ -138,6 +138,7 @@ $(function () {
 
   $('.menu-btn').on('click', function () {
     $('.menu').toggleClass('active');
+    $('.menu-btn').toggleClass('menu-btn--active');
   });
 
   new WOW().init();
